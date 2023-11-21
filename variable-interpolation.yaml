@@ -1,0 +1,5 @@
+server :
+  ip : 1.2.1.2
+  port : 80
+host:
+  hostip : https://${server.ip}:${server.port}

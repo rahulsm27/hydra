@@ -7,18 +7,18 @@ from hydra.core.config_store import ConfigStore
 
 @dataclass
 class ExperimentConfig:
-    model = "resnet18"
-    nrof_epochs  = 30
+    model: str = "resnet18"
+    nrof_epochs: int  = 30
 
 @dataclass
 class LossConfig:
-    model  = "archface"
-    nrof_typepochs  = 30
+    model: str  = "archface"
+    nrof_typepochs: int  = 30
 
 @dataclass
 class MyConfig:
-    training  = ExperimentConfig()
-    loss  = LossConfig()
+    training: ExperimentConfig  = ExperimentConfig
+    loss: LossConfig  = LossConfig
 
 # need to register our config in hyrda
 cs = ConfigStore.instance()

@@ -1,0 +1,6 @@
+training:
+  model: resnet18
+  nrof_epochs: 30
+loss:
+  model: archface
+  nrof_typepochs: 30

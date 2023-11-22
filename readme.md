@@ -22,3 +22,16 @@ host:
 
 # Multirun  -run same file with different config files
 python main.py -m experiment=experiment-with-resnet18,experiment-with-resent 50
+
+
+#output -hydra creates output folder and stores the paramters we used to run.
+
+
+#logging hydra enables logging. we need to decalare logger and logging message.
+
+#debugging..it will print the config on command line
+python main.py --cfg job
+
+#instantiate function
+# to select different parts of code for experimentation during run
+# instantiate different classes using config file and differnt parameters using config file

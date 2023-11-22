@@ -1,0 +1,7 @@
+my_class:
+  _target_: hydra_instantiate.MyClass
+  name: hydra
+optimizer:
+  _target_: torch.optimi.Asdam
+  _partial_: true
+  lr: 0.01
